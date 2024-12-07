@@ -3,3 +3,5 @@
 **/.ipynb_checkpoints
 **/**/__pycache__/**
 **/__pycache__/**
+TD_1/my_actions.npy
+TD_1/my_rewards.npy
