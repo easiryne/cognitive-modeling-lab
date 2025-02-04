@@ -4,8 +4,7 @@ import gradio as gr
 import numpy as np
 
 # Bandit task configuration
-TRAJ_NO = 1
-bandit_trajectory = np.load('bandit_data.npy')[TRAJ_NO]
+bandit_trajectory = np.load('bandit_data.npy')
 n_trials = bandit_trajectory.shape[-1]
 actions = []
 rewards = []
@@ -24,7 +23,7 @@ def pull_arm(arm):
         return f"Trial {trial}/{n_trials}  -  Reward: {reward:.2f}\n{'-'*10}\nScore: {score:.2f}"
     else:
         msg = save_rewards()
-        return f"All trials completed! \nYour score is: {score:.2f}\n{msg} \nYou can now close this window"
+        return f"All trials completed! \nYour score is: {score:.2f}\n{msg}"
 
 def save_rewards():
     np.save('my_actions.npy', np.array(actions))
@@ -41,7 +40,7 @@ def reset():
 # Gradio interface with clickable buttons for both arms
 with gr.Blocks(css=".red-button { color: red; }") as interface:
     gr.Markdown("# Two-Armed Restless Bandit Task")
-    gr.Markdown("Click on a button to select an arm:")
+    gr.Markdown("Click on a button to select an arm.\nTry to maximize your reward!")
 
     with gr.Row():  # Create a row with two buttons side by side
         arm_1_btn = gr.Button("Left")
