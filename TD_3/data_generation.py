@@ -6,7 +6,7 @@ num_trials = 1000
 
 signal_prob = 0.5
 
-block_selection_criteria = [0.5, -0.5, 1.5]
+block_selection_criteria = [0.5, -0.5, 1]
 n_blocks = len(block_selection_criteria)
 
 participant_d_prime = [1.5, 3]
@@ -25,7 +25,7 @@ def generate_data(participant_i, block_j):
     decision_values = np.random.normal(loc=d_prime * is_signal, scale=1)
 
     # Apply criterion
-    responses = decision_values > criterion  # Respond "signal" if value exceeds criterion
+    responses = decision_values > criterion + d_prime / 2 # Respond "signal" if value exceeds criterion
 
     # Compute response categories
     hits = np.sum(responses & is_signal)

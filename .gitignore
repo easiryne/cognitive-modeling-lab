@@ -5,3 +5,5 @@
 **/__pycache__/**
 TD_1/my_actions.npy
 TD_1/my_rewards.npy
+
+TD_2/data.csv
