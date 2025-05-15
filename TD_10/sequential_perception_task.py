@@ -1,13 +1,11 @@
-import numpy as np
 from typing import Tuple
 
-from matplotlib import pyplot as plt
-from matplotlib.colors import LinearSegmentedColormap
-from scipy.stats import rv_continuous
-from scipy.integrate import simpson
-import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
-
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.colors import LinearSegmentedColormap
+from scipy.integrate import simpson
+from scipy.stats import rv_continuous
 
 
 class ColorDistribution(rv_continuous):

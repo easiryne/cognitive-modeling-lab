@@ -1,12 +1,11 @@
-from dataclasses import dataclass
-from typing import Optional, List, Tuple
 from abc import ABC, abstractmethod
+from dataclasses import dataclass
+from typing import List, Tuple
+
 import numpy as np
 import scipy
 from matplotlib import pyplot as plt
 from pybads import OptimizeResult, BADS
-
-from sequential_perception_task import SequentialPerceptionTask, dist_orange, dist_blue
 
 
 @dataclass
