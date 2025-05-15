@@ -110,3 +110,20 @@ class Model(ABC):
     @abstractmethod
     def reset(self, n_blocks: int):
         raise NotImplementedError
+
+    def plot_param_specs(self):
+        fig, axs = plt.subplots(1, len(self.parameters), figsize=(3 * len(self.parameters), 2))
+        if not isinstance(axs, np.ndarray):
+            axs = np.array([axs])
+        for i, parameter in enumerate(self.parameters):
+            x = np.linspace(parameter.bounds[0], parameter.bounds[1], 100)
+            y = parameter.distribution.pdf(x)
+            axs[i].plot(x, y, label='prior')
+            axs[i].set_title(parameter.name)
+            axs[i].axvline(parameter.initial_value, color='red', linestyle='--', label='initial value')
+            axs[i].axvline(parameter.plausible_bounds[0], color='green', linestyle='--', label='plausible bounds')
+            axs[i].axvline(parameter.plausible_bounds[1], color='green', linestyle='--')
+            axs[i].set_xlabel('value')
+            axs[i].set_ylabel('density')
+            axs[i].legend()
+        plt.show()
