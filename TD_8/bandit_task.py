@@ -27,7 +27,8 @@ class BanditTask:
         plt.ylabel('Reward')
         plt.title(self)
 
-    def reset(self):
+    def reset(self, seed: int = None):
+        np.random.seed(seed)
         self.means, self.rewards = self.generate_trajectories()
         return self
 
