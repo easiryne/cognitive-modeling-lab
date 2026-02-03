@@ -10,13 +10,13 @@ class RLModel:
         self.q_values = np.array([0.5, 0.5])
 
 
-    def simulate(self, bandit_trajectory: np.ndarray):
-        assert bandit_trajectory.ndim == 2 and bandit_trajectory.shape[0] == 2, \
+    def simulate(self, bandit_data: np.ndarray):
+        assert bandit_data.ndim == 2 and bandit_data.shape[0] == 2, \
             "You must pass ONE bandit trajectory at a time. Input to simulate() should have shape (2, n_trials)"
         actions = []
         probs = []
         # Loop through the trials
-        for i_trial in range(bandit_trajectory.shape[1]):
+        for i_trial in range(bandit_data.shape[1]):
             # The policy gives the probability of choosing the right arm
             prob: float = self.softmax_policy(self.q_values)
             # Action is 0 if the left arm is chosen, 1 if the right arm is chosen
@@ -26,7 +26,7 @@ class RLModel:
             actions.append(action)
 
             # The bandit trajectory contains how much reward is given for the chosen action
-            reward: float = bandit_trajectory[action, i_trial]
+            reward: float = bandit_data[action, i_trial]
             # The q-value of the chosen action is updated according to the temporal-difference learning rule
             reward_prediction_error = reward - self.q_values[action]
             self.q_values[action] += self.learning_rate * reward_prediction_error
