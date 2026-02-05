@@ -30,6 +30,7 @@ and doesn't come with Anaconda's user interface (**Anaconda Navigator**).
 If you prefer to avoid using command-line terminal, and especially if your computer runs on Windows, then Anaconda is a better choice for you.
 
 Once you have installed Anaconda:
+
 1. Open the **Anaconda Navigator** application
 2. In the `Environments` 📦 tab (left side bar), create a new **conda environment** for the TDs:
    - Click on the `Import` button at the bottom of the Environment list

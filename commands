@@ -1,0 +1,3 @@
+# Convert README.md to PDF
+
+pandoc README.md -o Installation_instructions.pdf --pdf-engine=lualatex -V colorlinks=true -V urlcolor=blue
