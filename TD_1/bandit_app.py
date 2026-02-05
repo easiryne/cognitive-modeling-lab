@@ -1,5 +1,3 @@
-import random
-
 import gradio as gr
 import numpy as np
 
@@ -38,7 +36,7 @@ def reset():
     score = 0
 
 # Gradio interface with clickable buttons for both arms
-with gr.Blocks(css=".red-button { color: red; }") as interface:
+with gr.Blocks() as interface:
     gr.Markdown("# Two-Armed Restless Bandit Task")
     gr.Markdown("Click on a button to select an arm.\nTry to maximize your reward!")
 
@@ -55,4 +53,4 @@ with gr.Blocks(css=".red-button { color: red; }") as interface:
     gr.Button("Reset", elem_classes="red-button").click(fn=reset, inputs=[], outputs=result_output)
 
 # Launch the interface on localhost
-interface.launch(share=False)
+interface.launch(share=False, css=".red-button { color: red; }")
