@@ -1,4 +1,4 @@
-# Undertanding Human Behavior with Cognitive Models - Travaux Dirigés (TD)
+# Understanding Human Behavior with Cognitive Models - Travaux Dirigés (TD)
 ## Table of Contents
 ### [TD 1 - The Bandit task](TD_1)
    Get familiar with the **two-armed Bandit task**. Simulate behavior with a **computational model** and understand the role of **parameters**. Do the task and fit the model to your own behavior. 
@@ -104,3 +104,11 @@ All our TDs will be done on Jupyter Notebooks. The `JupyterLab` app is appropria
 conda activate tdenv
 jupyter lab
 ```
+--- 
+## License
+
+This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
+
+You are free to use, modify, and share the material for non-commercial purposes, provided that proper attribution is given.
+
+See the LICENSE file for details.
