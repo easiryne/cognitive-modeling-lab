@@ -1,5 +1,23 @@
-# Understanding Human Behavior with Cognitive Models - Travaux Dirigés (TD)
+# Understanding Human Behavior with Cognitive Models 
+<h3>
+  <img src="images/logo_ens.png" align="right" height="80" alt="ENS Logo" hspace="24" />
+   <br>
+  Master’s Degree in Cognitive Science<br>
+  <strong>École Normale Supérieure - PSL</strong>
+</h3>
+<br clear="all" />
+
+<strong>Practical exercises in Python to introduce to cognitive modeling.</strong><br>
+Dive into interactive labs that present fundamental approaches to study <b>decision-making</b>, combining computational modeling and behavioral analysis.
+Developed to complement lectures given by <b>Dr. Valentin Wyart</b> (Lecturer), these practical sessions, created and led by <b>Amric Trudel</b> (TD Instructor), provide access to advanced methodologies and direct application to data.
+<br>
+These labs are <b>accessible to programming beginners</b>, with bonus exercises available for more experienced students.
+The notebooks are self-explanatory and offer sufficient guidance and feedback (through <b>unit tests</b>) to help students progress at their own pace.
+
+<strong>Lab author:</strong> amric.trudel [at] ens.psl.eu
+
 ## Table of Contents
+
 ### [TD 1 - The Bandit task](TD_1)
    Get familiar with the **two-armed Bandit task**. Simulate behavior with a **computational model** and understand the role of **parameters**. Do the task and fit the model to your own behavior. 
 
@@ -50,7 +68,6 @@
 
    Download: &nbsp; [Exercise files 📦](TD_10/TD_10.zip) &nbsp;&nbsp;|&nbsp;&nbsp; [Solution 📝](TD_10/td10_solution.ipynb)
 
-<hr style="height:1px; border:none; background:#333;" />
 
 ## Installation
 ⚠️ Try to you complete the installation before the first TD session to save time!  
@@ -104,7 +121,7 @@ All our TDs will be done on Jupyter Notebooks. The `JupyterLab` app is appropria
 conda activate tdenv
 jupyter lab
 ```
---- 
+
 ## License
 
 This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
