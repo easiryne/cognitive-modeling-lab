@@ -9,5 +9,5 @@ def test_param_recovery_results(results: pd.DataFrame):
     for column_name in expected_column_names:
         assert column_name in results.columns, f"❌ the `results` DataFrame should have a column named {column_name}"
     assert np.all(results > 0), "❌ all values in the `results` DataFrame should be positive"
-    print("✅OK 👌")
+    print("✅ OK 👌")
 
