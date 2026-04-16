@@ -29,7 +29,7 @@ def generate_experimental_data(task, models: list, n_blocks: int, seed=42):
     np.random.seed(seed)
     data = []
     for i, model in enumerate(models):
-        subject_id = f"000{i+1}"
+        subject_id = f"SUBJ0{i+1}"
         for b in range(n_blocks):
             # Simulate the task
             task.reset(seed + b)
@@ -56,5 +56,5 @@ if __name__ == '__main__':
     task = ReversalBanditTask(0.4, 0.6, 0.25, 100)
     task.plot()
     plt.show()
-    data = generate_experimental_data(task, models, n_blocks=8, seed=42)
+    data = generate_experimental_data(task, models, n_blocks=5, seed=42)
     data.to_csv('experimental_data.csv', index=False)
