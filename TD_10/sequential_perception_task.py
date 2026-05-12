@@ -84,7 +84,7 @@ class SequentialPerceptionTask:
             ax.add_artist(truth_circle)
             ax.text(-0.2, 0.5, f"{block_idx + 1}", horizontalalignment='center', verticalalignment='center')
         axes[0].text(self.n_trials//2 + 1, 1, "Trials", fontsize=12, ha='center', va='bottom')
-        axes[0].text(self.n_trials + 2, 1, "ground truth", fontsize=8, ha='center', va='bottom')
+        axes[0].text(self.n_trials + 2, 1, "ground\ntruth", fontsize=8, ha='center', va='bottom')
         fig.text(-0.01, 0.5, "Block", va='center', rotation='vertical', fontsize=14)
         plt.tight_layout()
         if show:

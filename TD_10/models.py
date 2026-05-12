@@ -54,6 +54,7 @@ class Model(ABC):
                     label.set_color(color)
                 ax.axis('on')
                 ax.set_ylabel('evidence', fontsize=6)
+            axes[0].text(task.n_trials + 2.5, 1, "choice", fontsize=8, ha='left', va='bottom')
             fig.suptitle(self)
             plt.tight_layout()
             plt.show()
