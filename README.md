@@ -1,18 +1,18 @@
 # Understanding Human Behavior with Cognitive Models 
-<h3>
+<h2>
   <img src="images/logo_ens.png" align="right" height="80" alt="ENS Logo" hspace="24" />
    <br>
   Master’s Degree in Cognitive Science<br>
   <strong>École Normale Supérieure - PSL</strong>
-</h3>
-<br clear="all" />
+</h2>
+<h3>Département d'études cognitives - <a href="https://lnc2.dec.ens.fr/fr/inference-and-decision-making">Cognitive Variability Team</a></h3>
 
-<strong>Practical exercises in Python to introduce to cognitive modeling.</strong><br>
-Dive into interactive labs that present fundamental approaches to study <b>decision-making</b>, combining computational modeling and behavioral analysis.
-Developed to complement lectures given by <b>Dr. Valentin Wyart</b> (Lecturer), these practical sessions, created and led by <b>Amric Trudel</b> (TD Instructor), provide access to advanced methodologies and direct application to data.
-<br>
-These labs are <b>accessible to programming beginners</b>, with bonus exercises available for more experienced students.
-The notebooks are self-explanatory and offer sufficient guidance and feedback (through <b>unit tests</b>) to help students progress at their own pace.
+<strong>Interactive labs that introduce fundamental approaches to cognitive modeling in Python.</strong><br>
+These practical exercises focus on the study of <b>decision-making</b> through computational modeling and behavioral analysis.
+Developed to complement lectures by <strong>Dr. Valentin Wyart</strong> (Lecturer) in the Cognitive Science Master's program, these sessions are created and led by <strong>Amric Trudel</strong> (TD Instructor) to provide hands-on experience with advanced methodologies.
+<br><br>
+The labs are designed as self-contained <b>Jupyter Notebooks</b>, each lasting approximately <b>2 hours</b>. They are <b>accessible to programming beginners</b>, with optional exercises for more experienced students.
+With built-in guidance and feedback (through <b>unit tests</b>), students can progress at their own pace, allowing the TD instructor to focus on providing targeted, individual support.
 
 <strong>Lab author:</strong> amric.trudel [at] ens.psl.eu
 
